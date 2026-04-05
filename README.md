@@ -1,6 +1,38 @@
-# Tecnologie-del-linguaggio-naturale---Di-Caro
+# Natural Language Processing — Di Caro
 
-## Prima-Seconda esercitazione
+University exercises for the *Tecnologie del Linguaggio Naturale* course, taught by **Prof. Di Caro** at the University of Turin.
+
+## Exercises Overview
+
+| # | Topic | Key techniques |
+|---|-------|---------------|
+| **1.1-1.2** | Definition Consistency | Cosine similarity on student definitions, BoW, WordNet signatures |
+| **1.3** | WordNet Characterization | Definition length analysis, hypernym paths, BERT sentence embeddings |
+| **1.4 + EXTRA** | Knowledge Graph & PoS | Dependency parsing, PoS tagging, knowledge graph construction from XML corpora |
+| **1.5** | Extended Definition Analysis | Further study on definition structure |
+| **2.1** | Advanced NLP task | See notebook |
+| **2.2** | Domain Text Analysis | Topic analysis across domains (cuisine, travel, sustainability) |
+
+## Tech Stack
+
+- **Python 3** + **Jupyter Notebook**
+- **NLTK** (WordNet, tokenization, lemmatization)
+- **sentence-transformers** (BERT embeddings for Es. 1.3)
+- **NumPy** / **SciPy** for vector operations
+
+## Setup
+
+```bash
+pip install nltk numpy scipy sentence-transformers jupyter
+python -c "import nltk; nltk.download('wordnet')"
+jupyter notebook
+```
+
+---
+
+## Detailed Notes
+
+Prima-Seconda esercitazione
 
 #### Introduzione
 La prima e seconda esercitazione riguardano il calcolo della consistenza tra definizioni effettuate da noi studenti. Il task svolto a lezione prevedeva la selezione di 4 concetti, tra tutti quelli proposti dagli studenti, e di descrivere tali parole mediante definizioni. Ogni persona ha effettuato l'annotazione in modo indipendente cioè in base alla sua conoscenza del concetto.
