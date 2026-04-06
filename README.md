@@ -1,4 +1,4 @@
-# Natural Language Processing — Di Caro
+# Natural Language Processing: Di Caro
 
 University exercises for the *Tecnologie del Linguaggio Naturale* course, taught by **Prof. Di Caro** at the University of Turin.
 
