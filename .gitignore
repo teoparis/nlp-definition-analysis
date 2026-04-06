@@ -1,0 +1,33 @@
+# Byte-compiled / optimized / C extensions
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Virtual environments
+.env
+.venv
+venv/
+env/
+
+# Distribution / packaging
+*.egg-info/
+dist/
+build/
+
+# IDE
+.idea/
+.vscode/
+
+# Data files (keep only samples)
+*.parquet
+*.pkl
+
