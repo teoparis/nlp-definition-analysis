@@ -1,0 +1,348 @@
+<doc id="file15578641" filename="future.htm" parent_folder="web1" url="http://esl.fis.edu/grammar/rules/future.htm">
+<p> Future tenses </p>
+<p> There are several different ways in English that you can talk about the future. This page is an introduction to the most important ones: </p>
+<p> The auxiliary verb will is used in making predictions or simple statements of fact about the future. </p>
+<p> The sun will rise at 6.30 tomorrow. </p>
+<p> Lunch break today will be 10 minutes longer than usual. </p>
+<p> In the year 2050 all students will have their own computers in school. </p>
+<p> If you help me, I will help you. </p>
+<p> The auxiliary verb going to is used in talking about intentions. (An intention is a plan for the future that you have already thought about.) </p>
+<p> We're going to buy a new car next month. </p>
+<p> I'm going to work in a bank when I leave school. </p>
+<p> In the new year I'm going to stop eating so much junk. </p>
+<p> He's not going to go to the dance. He's got too much work. </p>
+<p> I'm not going to watch TV until my science project is finished. </p>
+<p> Are you going to play basketball after school? </p>
+<p> What are you going to have for lunch today? </p>
+<p> Note: going to is often used in the past tense to talk about an unfulfilled intention. Examples: I was going to study for my grammar test, but I had no time. / He was going to call you, but he couldn't find his mobile phone. / My grandmother was going to visit us, but she fell and broke her arm. </p>
+<p> The present continuous tense is used in talking about arrangements. (An arrangement is is a plan for the future that you have already thought about and discussed with someone else.) </p>
+<p> I'm meeting my mother at the airport tomorrow. </p>
+<p> Our grandparents are visiting us this Christmas. </p>
+<p> Sorry, I can't stay after school today; I'm playing tennis with Jun-Sik. </p>
+<p> My sister's going to the dentist tomorrow. </p>
+<p> I'm not returning home for the holidays, so I can come to your party after all! </p>
+<p> The present simple tense is usually used to refer to future events that are scheduled (and outside of our control). </p>
+<p> Hurry up! The train departs in 10 minutes. </p>
+<p> I leave Frankfurt at 5 o'clock in the morning and arrive in New York </p>
+<p> at midnight the next day. </p>
+<p> She has an appointment with the headmaster after school today. </p>
+<p> There's no need to hurry. The train doesn't leave for another 30 minutes. </p>
+<p> This is a very difficult aspect of English grammar. Learners who want a deeper understanding should consult a good grammar reference such as Swan's Practical English Usage. </p>
+</doc>
+<doc id="file15578643" filename="future-simple-going-to" parent_folder="web1" url="https://english.lingolia.com/en/grammar/tenses/future-simple-going-to">
+<p> Be going to – Simple Future in English Grammar </p>
+<p> Introduction </p>
+<p> The future tense with going to, also simple future, expresses a logical prediction for the future or an intention or plan which has already been decided. This tense is constructed with: be + going to + infinitive. </p>
+<p> Learn how to conjugate the future tense with going to in English grammar and get tips on its usage. In the exercises, you can test your knowledge. </p>
+<p> Example </p>
+<p> Mrs Lucky is going to meet a friend in town. </p>
+<p> She has just looked out of the window. The sky is blue – it is not going to rain. So Mrs Lucky is going to leave her umbrella at home. </p>
+<p> Advertisement </p>
+<p> Usage </p>
+<p> Use the future with going to for: </p>
+<p> plans and intentions for the future when a decision has already been made. </p>
+<p> Example: </p>
+<p> Mrs Lucky is going to meet a friend in town. </p>
+<p> predictions for the future that are based on present evidence. </p>
+<p> Example: </p>
+<p> The sky is blue - it is not going to rain. So Mrs Lucky is going to leave her umbrella at home. </p>
+<p> Signal Words: English Simple Future Tense </p>
+<p> Certain expression can help us to recognise the tense being used in a sentence. Below is a list of expressions for the future with going to: </p>
+<p> in one year, next week, tomorrow </p>
+<p> going to vs. gonna </p>
+<p> In informal contexts (such as text messages and emails between friends) and especially in spoken English, going to is often contracted to gonna. </p>
+<p> Example: </p>
+<p> Mrs Lucky is going to meet a friend in town. (more formal/written English) </p>
+<p> I’m gonna meet a friend in town.(informal/spoken English) </p>
+<p> Never use this form in formal written English. </p>
+<p> Conjugation of English Future Tense with going to </p>
+<p> To conjugate the future with going to, we follow the rule: be + going to + infinitive. The table below provides an overview of positive, negative and interrogative conjugations for the simple future with going to. </p>
+<p> Contractions </p>
+<p> Contractions are a combination of certain pronouns, verbs and the word not. They are mostly used in spoken and informal written English. The table below provides an overview of contractions in the future with going to. </p>
+<p> To Note </p>
+<p> In written English, the contracted form of are can only be used after pronouns, not after nouns and names. </p>
+</doc>
+<doc id="file15578646" filename="Future_Will.htm" parent_folder="web1" url="https://grammar.cl/Notes/Future_Will.htm">
+<p> Future - Will </p>
+<p> English Grammar Notes </p>
+<p> We normally use WILL to speak about the future. It is always combined with another verb. </p>
+<p> Since WILL is classified as a modal verb (like can, would, could, should) it has the same characteristics: </p>
+<p> It does not change in the third person (i.e. he, she, it) </p>
+<p> It is always combined with another verb in the base form (i.e. without 'to') </p>
+<p> We don't use it with 'Do' in questions or negatives. </p>
+<p> My daughter will fall asleep as soon as she is put into bed. </p>
+<p> He will give up if he starts losing. He always does that. </p>
+<p> 5. You use WON'T when someone refuses to do something. </p>
+<p> I told him to clean his room but he won't do it. </p>
+<p> She won't listen to anything I say. </p>
+<p> Negative Sentences with WILL </p>
+<p> In the negative, we add NOT to the end of WILL and not to the main verb. (= will not) </p>
+<p> Examples: </p>
+<p> I will not be in the office tomorrow. (correct) I will be not in the office tomorrow. (Incorrect) </p>
+<p> They will not stay here. (correct) They will stay not here. (Incorrect) </p>
+<p> Contractions </p>
+<p> It is possible to use contractions in both positive and negative sentences. </p>
+<p> With positive contractions WILL becomes 'LL and is joined to the subject: </p>
+<p> Next activity </p>
+<p> If you found this grammar guide about the Future Tense using Will useful, let others know about it: </p>
+<p> Grammar Notes </p>
+<p> A variety of English grammar notes and rules including charts and examples for beginner to advanced level students. </p>
+<p> Grammar Games </p>
+<p> Improve your English with our interactive English grammar games. There are many different topics and levels. </p>
+</doc>
+<doc id="file15578645" filename="Future_Will_vs_Going.htm" parent_folder="web1" url="https://grammar.cl/Notes/Future_Will_vs_Going.htm">
+<p> Future - Will vs. Going to </p>
+<p> English Grammar Rules </p>
+<p> A very confusing concept is when to use WILL and when to use BE GOING TO when we refer the future. </p>
+<p> Both refer to the future and there is a slight difference between the two though in most cases they can be used interchangeably with no difference in meaning. Even if you misuse them, a native speaker is going to understand you without any problems. </p>
+<p> Quick Summary Chart </p>
+<p> When to use GOING TO </p>
+<p> The structure BE GOING TO is normally used to indicate the future but with some type of connection to the present. We use it in the following situations: </p>
+<p> 1. When we have already decided or we INTEND to do something in the future. (Prior Plan) </p>
+<p> The decision has been made before the moment of speaking. </p>
+<p> They're going to retire to the beach - in fact they have already bought a little beach house. </p>
+<p> I'm going to accept the job offer. </p>
+<p> 2. When there are definite signs that something is going to happen. (Evidence) </p>
+<p> Something is likely to happen based on the evidence or experience you have. </p>
+<p> I think it is going to rain - I just felt a drop. </p>
+<p> I don't feel well. I think I'm going to throw up. (throw up = vomit) </p>
+<p> 3. When something is about to happen: </p>
+<p> Get back! The bomb is going to explode. </p>
+<p> When to use WILL </p>
+<p> In other cases, where there is no implicit or explicit connection to the present, use WILL: </p>
+<p> 1. For things that we decide to do now. (Rapid Decisions) </p>
+<p> This is when you make a decision at that moment, in a spontaneous way. </p>
+<p> I'll buy one for you too. </p>
+<p> I think I'll try one of those. (I just decided this right now) </p>
+<p> 2. When we think or believe something about the future. (Prediction) </p>
+<p> 4. You use WON'T when someone refuses to do something. </p>
+<p> I told him to take out the trash but he won't do it. </p>
+<p> My kids won't listen to anything I say. </p>
+<p> My car won't start. </p>
+<p> Future Predictions </p>
+<p> As you can see, both Will and Going to can be used for making future predictions without having a real difference in meaning. </p>
+<p> The weather report says it will rain tomorrow. (Correct) </p>
+<p> The weather report says it is going to rain tomorrow. (Correct) </p>
+<p> Compare Will vs. Going To </p>
+<p> If someone asks: "Are you busy this evening?" </p>
+<p> If I respond: "Yes, I'm going to the movies." I use going to because it is a plan I made earlier (before I was asked the question). - In this case we cannot use Will. </p>
+<p> If I haven't made plans, then you can say either: "I will probably watch TV." OR "I'm probably going to watch TV." </p>
+<p> Both will and going to are possible in this situation because we are predicting what will happen (since we haven't made any plans). </p>
+<p> Next activity </p>
+<p> For more framework on the use of WILL and GOING TO refer to the student notes for each of these at: Will and Going to </p>
+<p> If you found this grammar guide about WILL and GOING TO in English useful, let others know about it: </p>
+<p> Grammar Notes </p>
+<p> A variety of English grammar notes and rules including charts and examples for beginner to advanced level students. </p>
+<p> Grammar Games </p>
+<p> Improve your English with our interactive English grammar games. There are many different topics and levels. </p>
+</doc>
+<doc id="file15578655" filename="guide-to-future-1211192" parent_folder="web1" url="https://www.thoughtco.com/guide-to-future-1211192">
+<p> M.A., Music Performance, Cologne University of Music </p>
+<p> B.A., Vocal Performance, Eastman School of Music </p>
+<p> Kenneth Beare is an English as a Second Language (ESL) teacher and course developer with over three decades of teaching experience. </p>
+<p> The future in English can be rather confusing. There are two future forms used in most conversations: the future with "will" and the future with "going to." The main difference between the two forms is that "going to" is used for plans and intentions made before the moment of speaking, and the "will" to speak about the future at the moment of speaking. Study these basic forms and then use the referenced resources to practice these forms. Teachers can print out these materials for use in-class, or find help with how to teach future forms, as well as the lesson plans suggested below. </p>
+<p> The Future With Will </p>
+<p> There are two basic future tenses used to describe things that happen in the future. Besides these two there are some other future tenses which can be started on the advanced future tenses page. The first future tense is the future with "will." Use the future with will to talk about an event in the future that you have just decided to do, for predictions and for promises. </p>
+<p> The economy will get better soon. </p>
+<p> Yes, I will marry you. </p>
+<p> Future With 'Will' Structure: </p>
+<p> (I, You, He, She, We, They) won't have time tomorrow. </p>
+<p> Questions: Question word + will + subject + verb </p>
+<p> What will (he, she, you, we) they do? </p>
+<p> The Future With Going To </p>
+<p> The future with "going to" is used to express events you have already planned in the future and your intentions for the future. We sometimes also use the present continuous for planned events in the near future. </p>
+<p> Examples: </p>
+<p> She's going to attend university and study to become a doctor. </p>
+<p> Additional Future Tense Resources </p>
+<p> Resource for ESL Teachers. This intermediate lesson focuses solely on the future with "will" and "going to" and includes a step by step guide through the lesson and handouts to use in class. </p>
+<p> Activities With the Future With Will and Going to </p>
+<p> Some activities that will help you practice: </p>
+<p> Planning a Party - Dialogue concentrating on the future with 'will' and 'going to'. </p>
+<p> The Meeting - Dialogue with schedules, future plans </p>
+<p> English Tenses Timeline Chart - study how the future forms with will and going to relate to other tenses on a timeline. </p>
+<p> ThoughtCo uses cookies to provide you with a great user experience. By using ThoughtCo, you accept our </p>
+</doc>
+<doc id="file15578650" filename="simplefuture.html" parent_folder="web1" url="https://www.englishpage.com/verbpage/simplefuture.html">
+<p> Simple Future </p>
+<p> Simple future has two different forms in English: "will" and "be going to." Although the two forms can sometimes be used interchangeably, they often express two very different meanings. These different meanings might seem too abstract at first, but with time and practice, the differences will become clear. Both "will" and "be going to" refer to a specific time in the future. </p>
+<p> FORM Be Going To </p>
+<p> USE 1 "Will" to Express a Voluntary Action </p>
+<p> "Will" often suggests that a speaker will do something voluntarily. A voluntary action is one the speaker offers to do for someone else. Often, we use "will" to respond to someone else's complaint or request for help. We also use "will" when we request that someone help us or volunteer to do something for us. Similarly, we use "will not" or "won't" when we refuse to voluntarily do something. </p>
+<p> Examples: </p>
+<p> I will send you the information when I get it. </p>
+<p> I will translate the email, so Mr. Smith can read it. </p>
+<p> Will you help me move this heavy table? </p>
+<p> USE 2 "Will" to Express a Promise </p>
+<p> "Will" is usually used in promises. </p>
+<p> Examples: </p>
+<p> I will call you when I arrive. </p>
+<p> If I am elected President of the United States, I will make sure everyone has access to inexpensive health insurance. </p>
+<p> I promise I will not tell him about the surprise party. </p>
+<p> Don't worry, I'll be careful. </p>
+<p> I won't tell anyone your secret. </p>
+<p> USE 3 "Be going to" to Express a Plan </p>
+<p> "Be going to" expresses that something is a plan. It expresses the idea that a person intends to do something in the future. It does not matter whether the plan is realistic or not. </p>
+<p> Examples: </p>
+<p> He is going to spend his vacation in Hawaii. </p>
+<p> She is not going to spend her vacation in Hawaii. </p>
+<p> A: When are we going to meet each other tonight? B: We are going to meet at 6 PM. </p>
+<p> I'm going to be an actor when I grow up. </p>
+<p> Michelle is going to begin medical school next year. </p>
+<p> They are going to drive all the way to Alaska. </p>
+<p> Who are you going to invite to the party? </p>
+<p> A: Who is going to make John's birthday cake? B: Sue is going to make John's birthday cake. </p>
+<p> USE 4 "Will" or "Be Going to" to Express a Prediction </p>
+<p> Both "will" and "be going to" can express the idea of a general prediction about the future. Predictions are guesses about what might happen in the future. In "prediction" sentences, the subject usually has little control over the future and therefore USES 1-3 do not apply. In the following examples, there is no difference in meaning. </p>
+<p> Examples: </p>
+<p> The year 2222 will be a very interesting year. </p>
+<p> The year 2222 is going to be a very interesting year. </p>
+<p> John Smith will be the next President. </p>
+<p> John Smith is going to be the next President. </p>
+<p> The movie "Zenith" will win several Academy Awards. </p>
+<p> The movie "Zenith" is going to win several Academy Awards. </p>
+<p> IMPORTANT </p>
+<p> In the simple future, it is not always clear which USE the speaker has in mind. Often, there is more than one way to interpret a sentence's meaning. </p>
+<p> No Future in Time Clauses </p>
+<p> Like all future forms, the simple future cannot be used in clauses beginning with time expressions such as: when, while, before, after, by the time, as soon as, if, unless, etc. Instead of simple future, simple present is used. </p>
+<p> Examples: </p>
+<p> When you will arrive tonight, we will go out for dinner. Not Correct </p>
+<p> When you arrive tonight, we will go out for dinner. Correct </p>
+<p> ADVERB PLACEMENT </p>
+<p> The examples below show the placement for grammar adverbs such as: always, only, never, ever, still, just, etc. </p>
+<p> Verb Tense Exercise 24 Simple Present, Simple Future, Present Continuous, and Future Continuous </p>
+</doc>
+<doc id="file15578649" filename="talking-about-the-future" parent_folder="web1" url="https://learnenglish.britishcouncil.org/english-grammar-reference/talking-about-the-future">
+<p> You are here </p>
+<p> Talking about the future </p>
+<p> We have a lesson next Monday. The train arrives at 6.30 in the morning. The holidays start next week. It's my birthday tomorrow. </p>
+<p> I'm playing football tomorrow. They are coming to see us tomorrow. We're having a party at Christmas. </p>
+<p> It will be a nice day tomorrow. I think Brazil will win the World Cup. I'm sure you will enjoy the film. </p>
+<p> to mean want to or be willing to: </p>
+<p> I hope you will come to my party. George says he will help us. </p>
+<p> to make offers and promises : </p>
+<p> I'll see you tomorrow. We'll send you an email. </p>
+<p> Tim will be at the meeting. Mary will help with the cooking. </p>
+<p> 4. We use be going to: </p>
+<p> to talk about plans or intentions: </p>
+<p> I'm going to drive to work today. They are going to move to Manchester. </p>
+<p> to make predictions based on evidence we can see: </p>
+<p> Be careful! You are going to fall. (= I can see that you might fall.) Look at those black clouds. I think it's going to rain. (= I can see that it will rain.) </p>
+<p> 5. We use will be with an -ing form for something happening before and after a specific time in the future: </p>
+<p> I'll be working at eight o'clock. Can you come later? They'll be waiting for you when you arrive. </p>
+<p> 6. We can use will be with an -ing form instead of the present continuous or be going to when we are talking about plans, arrangements and intentions: </p>
+<p> They'll be coming to see us next week. I'll be driving to work tomorrow. </p>
+<p> 7. We often use verbs like would like, plan, want, mean, hope, expect to talk about the future: </p>
+<p> What are you going to do next year? I'd like to go to university. We plan to go to France for our holidays. George wants to buy a new car. </p>
+<p> 8. We use modals may, might and could when we are not sure about the future: </p>
+<p> I might stay at home tonight or I might go to the cinema. We could see Mary at the meeting. She sometimes goes. </p>
+<p> 9. We can use should if we think there's a good chance of something happening: </p>
+<p> We should be home in time for tea. The game should be over by eight o'clock. </p>
+<p> In time clauses with words like when, after, until we often use present tense forms to talk about the future: </p>
+<p> I'll come home when I finish work. You must wait here until your father comes. They are coming after they have had dinner. </p>
+<p> In clauses with if we often use present tense forms to talk about the future: </p>
+<p> We won't be able to go out if it is raining. If Barcelona lose tomorrow, they will be champions. </p>
+<p> Be careful! </p>
+<p> We do not normally use will in time clauses and if-clauses: </p>
+<p> I'll come home when I finish work. (NOT will finish work) We won’t be able to go out if it rains. (NOT will rain) </p>
+<p> but we can use will if it means want to or be willing to: </p>
+<p> I will be very happy if you will come to my party. We should finish the job early if George will help us. </p>
+<p> Comments </p>
+<p> Amit shukla replied on 20 May, 2020 - 11:34 India </p>
+<p> Hello Sir, Sir, what is the difference between these sentences. 1. We plan to go to France for our holidays. 2. We have planned to go to France for our holidays. </p>
+<p> The first sentence is fine. It talks about what the speaker intends to do in the future. </p>
+<p> The second sentence does not seem very natural to me. If the plan is still current then you would use a present simple form like in the first sentence. If the plan is not currect then you would use a past simple form: We planned to go to France for our holidays... but then our plans changed. </p>
+<p> You could use have planned in a different context: </p>
+<p> We have planned the first part of the journey, now we need to plan the second part. </p>
+<p> Here, plan is used not to mean 'intend' as in your example but rather to mean 'prepare'. </p>
+<p> I would like to know if there is a sentence, with a decision that involves planning, in going to future in this paragraph (specifically 'I am going to wait for the CDC advisory to be lowered'). If so could you provied me with an explanation as to why. </p>
+<p> *As antsy as I am to get back on the road, I’m waiting until these advisories have been lifted before I consider non-essential travel again. For domestic air travel, I’m going to wait for the CDC advisory to be lowered. For international travel, I’ll be waiting for both the U.S. State Department and the destination country’s health department to lower advisories.* </p>
+<p> Milca_Joy replied on 25 April, 2020 - 05:06 Philippines </p>
+<p> I've tried to correct the grammar in this statement of my friend, I would like to ask some help if I made it right. </p>
+<p> [friend's statement] I'll do some job first Then if I had saved enough money, I will go to school. </p>
+<p> [my correction] I am gonna do some job first Then if I save enough money, I am going to school. </p>
+<p> I think take would be better than do in this context. You could say do some jobs, but that does not necessarily mean getting paid for them. </p>
+<p> In the first sentence both will and going to are possible. It depends upon whether this is a plan or a decision made at the time of speaking. If the person has thought about this before then going to is better. </p>
+<p> In the second sentence had saved is not correct; save is fine. You could also change if to when if the speaker is sure that they will have enough money at some point. </p>
+<p> Hello! Can we say like this, 'This work will be done by night'. If so, then why we didn't use "do" in a sentence because I'm talking about simple future tense and so the verb do will be used. </p>
+<p> YSATO201602 replied on 19 April, 2020 - 10:08 Japan </p>
+<p> Hello teachers </p>
+<p> We often use present simple tense to mean future events which are very unlikely to change such as: - Our plane departs at 6:45. (instead of "will depart") - Don't be late! The meeting starts at 13:00. (instead of "will start") </p>
+<p> My students asked me whether it is also right to say: - My father is retirement age next year. - I am seventeen years old next month. They thought these are also unchangeable future events. In my feeling, of course, it should be more suitable to use "will be" in both cases instead of "is/am" and I usually hear such phrases in a conversation. But I just want to ask native speakers whether these two sentences are really unnatural, and if so, why they sounds unfeasible. </p>
+<p> hello sir how can i write a task about " What will your life be like when you’re 70?" </p>
+<p> Anna Bo replied on 9 March, 2020 - 14:16 Czech Republic </p>
+<p> Can I use -Will in a relative clause after future time clause in a case like this: When you join the group, that will study intensively, be ready to work hard. </p>
+</doc>
+<doc id="file15578653" filename="the-future-tense-with-be-going-to" parent_folder="web1" url="https://www.gymglish.com/en/gymglish/english-grammar/the-future-tense-with-be-going-to">
+<p> The future tense with 'be going to' </p>
+<p> The future tense with 'BE GOING TO' </p>
+<p> The expression be going to, followed by a verb in the infinitive, allows us to express an idea in the near future: </p>
+<p> I'm going to talk to him. Very soon I will talk to him. </p>
+<p> Several employees are going to be promoted next month. Several employees will be promoted next month. </p>
+<p> Be going to can also express a conviction or a certainty: </p>
+<p> It's going to rain. For sure, it will rain. </p>
+<p> I'm not going to fail. I definitely will not fail. </p>
+<p> Note: be going to can also be used with a past participle: </p>
+<p> They are going to have finished by tomorrow afternoon. They will have finished by tomorrow afternoon. (however, will is used much more frequently in this type of construction: They will have finished...) </p>
+<p> Taking your learning further </p>
+<p> Still facing difficulties with 'The future tense with 'be going to''? Improve your English with Gymglish - try our English lessons for free now and receive a free level assessment! </p>
+<p> Do you know any tips to avoid making mistakes with 'The future tense with 'be going to''? Share it with us! </p>
+</doc>
+<doc id="file15578647" filename="will-future-tense-konu-anlatimi" parent_folder="web1" url="https://ingilizcebankasi.com/will-future-tense-konu-anlatimi/">
+<p> Will Future Tense Konu Anlatımı </p>
+<p> Future Tense, Türkçedeki gelecek zamandır. Cümleye eklendiğinde -ecek, -acak anlamları katar. Henüz gerçekleşmemiş, gelecekte yapılacak olan eylemlerden bahsederken kullanılır. </p>
+<p> Örneğin: </p>
+<p> I am busy now. I will call you later. (Şu an meşgulüm. Seni sonra arayacağım) </p>
+<p> She attends a driving course. She will get her driving licence next month. (O, sürücü kursuna gidiyor. Ehliyetini önümüzdeki ay alacak) </p>
+<p> Future simple (will) Tüm öznelerle will yardımcı fiil olarak kullanılır. Fiil hiçbir takı almadan yalın halde kullanılır. </p>
+<p> (Yarın sunumumu yapacağım) </p>
+<p> the day after tomorrow: yarından sonra </p>
+<p> next week, next year, next month,next time: önümüzdeki hafta, önümüzdeki yıl, önümüzdeki ay, bir dahaki sefere </p>
+<p> 6-If you don’t feel good, I ____ (to bring) a pill for you. </p>
+<p> 7-I _____ (not to invite) them to the party. </p>
+<p> 8-Don’t worry. I ______ (to feed) your fish. </p>
+<p> 9-I think the weather _____ (to be) good tomorrow. </p>
+<p> 10- We _____ (to play) tennis next week. </p>
+<p> Answers: 1-will go / 2-won’t have / 3-will be / 4-will visit / 5-will take / 6- will bring / 7-won’t invite / 8-will feed / 9-will be / 10- will play </p>
+</doc>
+<doc id="file15578652" filename="will-vs-going-to.html" parent_folder="web1" url="https://www.grammarbank.com/will-vs-going-to.html">
+<p> Will vs Going To </p>
+<p> Even though most native speakers use these two interchangeably, "will", also referred as simple future, has some grammatical differences from "going to" (planned future). </p>
+<p> Differences Between Future Tenses </p>
+<p> 1. We use "going to" to talk about a planned activity for future. </p>
+<p> For instance: </p>
+<p> A: There is a good movie on TV tonight. B: Yes. I know. I am going to watch it. </p>
+<p> A: Why is Betty in a hurry? B: Because she is going to meet her brother at the station at six. </p>
+<p> 2. We use "will" when we decide to do something at the time of speaking. </p>
+<p> For instance : </p>
+<p> A: What would you like to drink, sir? B: I will have a glass of milk, please. </p>
+<p> A: Oh, you have left the door open. B: Have I? I will go and shut it. </p>
+<p> 3. We use "going to" for prediction in the near future. The speaker is sure because there are signs about it. </p>
+<p> For instance : </p>
+<p> She is standing at the edge of the cliff, she is going to fall. </p>
+<p> A: What is the problem? There are strange noises in the lift. B: I think the lift is going to break down .Let’s get out! </p>
+<p> A: I feel cold. B: Look at those black clouds. It is going to rain. </p>
+<p> A: What is the matter with you? B: I feel terrible. I think I am going to be ill. </p>
+<p> 4. We use "will" for prediction in the remote future </p>
+<p> For instance : </p>
+<p> A: How is he, doctor? B: Don’t worry. He will get better. </p>
+<p> A: The bridge is not so safe. B: Yes. One day it will break down. </p>
+<p> 5. We use "will" for requests, invitations and offers. </p>
+<p> For instance : </p>
+<p> Will you shut the door, please? (Request) Will you come to the cinema with me? (Invitation) That bag looks very heavy. I will help you. (Offer) </p>
+<p> 6. We generally use "will" for prediction with the following verbs and phrases. </p>
+<p> Believe , expect , hope , think , wonder , I’m sure , I’m afraid ...etc </p>
+<p> I believe he will pass the exam. I hope he won’t leave us. I am afraid he will fail the exam. Do you think they will divorce? </p>
+<p> 7. We use "will" with the adverbs Perhaps, probably, certainly </p>
+<p> We do not use going to in this case. </p>
+<p> Perhaps they will support you in the election. Jackson will probably go to London next year. </p>
+<p> 8. We use "will" to express promise, not going to </p>
+<p> I will study medicine at university. I will stop going to the casino. </p>
+<p> 9. We use "will" in a question tag after imperative, not going to. </p>
+<p> Do it today, will you? Don’t look at your friend’s paper, will you? </p>
+<p> 10. We use "will" to give an order or state our wishes, not be going to. </p>
+<p> Will you turn on the lights? </p>
+<p> 11. We use "will" to express an action in necessity in the future, not be going to. </p>
+<p> You will have to pay a fine if you don’t pay your tax on time. </p>
+<p> 12. We use "will" for threat. </p>
+<p> Study hard or you will fail. Give me all your money or you will die. </p>
+</doc>
