@@ -1,0 +1,204 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis.css" type="text/css" />
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis-network.min.js"> </script>
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+
+<style type="text/css">
+
+        #mynetwork {
+            width: 1500px;
+            height: 700px;
+            background-color: #ffffff;
+            border: 1px solid lightgray;
+            position: relative;
+            float: left;
+        }
+
+        
+        #loadingBar {
+            position:absolute;
+            top:0px;
+            left:0px;
+            width: 1500px;
+            height: 700px;
+            background-color:rgba(200,200,200,0.8);
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -ms-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            opacity:1;
+        }
+
+        #bar {
+            position:absolute;
+            top:0px;
+            left:0px;
+            width:20px;
+            height:20px;
+            margin:auto auto auto auto;
+            border-radius:11px;
+            border:2px solid rgba(30,30,30,0.05);
+            background: rgb(0, 173, 246); /* Old browsers */
+            box-shadow: 2px 0px 4px rgba(0,0,0,0.4);
+        }
+
+        #border {
+            position:absolute;
+            top:10px;
+            left:10px;
+            width:500px;
+            height:23px;
+            margin:auto auto auto auto;
+            box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+            border-radius:10px;
+        }
+
+        #text {
+            position:absolute;
+            top:8px;
+            left:530px;
+            width:30px;
+            height:50px;
+            margin:auto auto auto auto;
+            font-size:22px;
+            color: #000000;
+        }
+
+        div.outerBorder {
+            position:relative;
+            top:400px;
+            width:600px;
+            height:44px;
+            margin:auto auto auto auto;
+            border:8px solid rgba(0,0,0,0.1);
+            background: rgb(252,252,252); /* Old browsers */
+            background: -moz-linear-gradient(top,  rgba(252,252,252,1) 0%, rgba(237,237,237,1) 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,252,252,1)), color-stop(100%,rgba(237,237,237,1))); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* IE10+ */
+            background: linear-gradient(to bottom,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+            border-radius:72px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+        }
+        
+
+        
+
+        
+</style>
+
+</head>
+
+<body>
+<div id = "mynetwork"></div>
+
+<div id="loadingBar">
+    <div class="outerBorder">
+        <div id="text">0%</div>
+        <div id="border">
+            <div id="bar"></div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+
+    // initialize global variables.
+    var edges;
+    var nodes;
+    var network; 
+    var container;
+    var options, data;
+
+    
+    // This method is responsible for drawing the graph, returns the drawn network
+    function drawGraph() {
+        var container = document.getElementById('mynetwork');
+        
+        
+
+        // parsing and collecting nodes and edges from the python
+        nodes = new vis.DataSet([{"id": 0, "label": "buy", "shape": "dot", "size": 30}, {"id": 1, "label": "PRP", "shape": "dot", "size": 15}, {"id": 2, "label": "NNS", "shape": "dot", "size": 15}, {"id": 3, "label": "NNS", "shape": "dot", "size": 15}, {"id": 4, "label": "NNP", "shape": "dot", "size": 15}, {"id": 5, "label": "NNS", "shape": "dot", "size": 15}, {"id": 6, "label": "NNP", "shape": "dot", "size": 15}, {"id": 7, "label": "NNS", "shape": "dot", "size": 15}, {"id": 8, "label": "NNP", "shape": "dot", "size": 15}, {"id": 9, "label": "VBZ", "shape": "dot", "size": 15}, {"id": 10, "label": "NNP", "shape": "dot", "size": 15}, {"id": 11, "label": "PRP", "shape": "dot", "size": 15}, {"id": 12, "label": "NN", "shape": "dot", "size": 15}, {"id": 13, "label": "PRP", "shape": "dot", "size": 15}, {"id": 14, "label": "PRP", "shape": "dot", "size": 15}, {"id": 15, "label": "NN", "shape": "dot", "size": 15}, {"id": 16, "label": "PRP", "shape": "dot", "size": 15}, {"id": 17, "label": "NN", "shape": "dot", "size": 15}, {"id": 18, "label": "PRP", "shape": "dot", "size": 15}, {"id": 19, "label": "PRP", "shape": "dot", "size": 15}, {"id": 20, "label": "CD", "shape": "dot", "size": 15}, {"id": 21, "label": "PRP", "shape": "dot", "size": 15}, {"id": 22, "label": "NNS", "shape": "dot", "size": 15}, {"id": 23, "label": "PRP", "shape": "dot", "size": 15}, {"id": 24, "label": "NN", "shape": "dot", "size": 15}, {"id": 25, "label": "NN", "shape": "dot", "size": 15}, {"id": 26, "label": "NN", "shape": "dot", "size": 15}, {"id": 27, "label": "NNP", "shape": "dot", "size": 15}, {"id": 28, "label": "NN", "shape": "dot", "size": 15}, {"id": 29, "label": "NN", "shape": "dot", "size": 15}, {"id": 30, "label": "NNS", "shape": "dot", "size": 15}, {"id": 31, "label": "PRP", "shape": "dot", "size": 15}, {"id": 32, "label": "NNP", "shape": "dot", "size": 15}, {"id": 33, "label": "PRP", "shape": "dot", "size": 15}, {"id": 34, "label": "NNS", "shape": "dot", "size": 15}, {"id": 35, "label": "PRP", "shape": "dot", "size": 15}, {"id": 36, "label": "NNS", "shape": "dot", "size": 15}, {"id": 37, "label": "PRP", "shape": "dot", "size": 15}, {"id": 38, "label": "NN", "shape": "dot", "size": 15}, {"id": 39, "label": "PRP", "shape": "dot", "size": 15}, {"id": 40, "label": "NNS", "shape": "dot", "size": 15}, {"id": 41, "label": "PRP", "shape": "dot", "size": 15}, {"id": 42, "label": "CD", "shape": "dot", "size": 15}, {"id": 43, "label": "NNS", "shape": "dot", "size": 15}, {"id": 44, "label": "NNS", "shape": "dot", "size": 15}, {"id": 45, "label": "PRP", "shape": "dot", "size": 15}, {"id": 46, "label": "NN", "shape": "dot", "size": 15}, {"id": 47, "label": "PRP", "shape": "dot", "size": 15}, {"id": 48, "label": "NN", "shape": "dot", "size": 15}, {"id": 49, "label": "PRP", "shape": "dot", "size": 15}, {"id": 50, "label": "NNS", "shape": "dot", "size": 15}, {"id": 51, "label": "PRP", "shape": "dot", "size": 15}, {"id": 52, "label": "NNS", "shape": "dot", "size": 15}, {"id": 53, "label": "PRP", "shape": "dot", "size": 15}, {"id": 54, "label": "NN", "shape": "dot", "size": 15}, {"id": 55, "label": "PRP", "shape": "dot", "size": 15}, {"id": 56, "label": "NN", "shape": "dot", "size": 15}, {"id": 57, "label": "NN", "shape": "dot", "size": 15}, {"id": 58, "label": "NNP", "shape": "dot", "size": 15}, {"id": 59, "label": "NN", "shape": "dot", "size": 15}, {"id": 60, "label": "NNP", "shape": "dot", "size": 15}, {"id": 61, "label": "PRP", "shape": "dot", "size": 15}, {"id": 62, "label": "PRP", "shape": "dot", "size": 15}, {"id": 63, "label": "PRP", "shape": "dot", "size": 15}, {"id": 64, "label": "NN", "shape": "dot", "size": 15}, {"id": 65, "label": "PRP", "shape": "dot", "size": 15}, {"id": 66, "label": "NN", "shape": "dot", "size": 15}, {"id": 67, "label": "PRP", "shape": "dot", "size": 15}, {"id": 68, "label": "NNP", "shape": "dot", "size": 15}, {"id": 69, "label": "NNPS", "shape": "dot", "size": 15}, {"id": 70, "label": "NN", "shape": "dot", "size": 15}, {"id": 71, "label": "PRP", "shape": "dot", "size": 15}, {"id": 72, "label": "NN", "shape": "dot", "size": 15}, {"id": 73, "label": "PRP", "shape": "dot", "size": 15}, {"id": 74, "label": "PRP", "shape": "dot", "size": 15}, {"id": 75, "label": "PRP", "shape": "dot", "size": 15}, {"id": 76, "label": "WDT", "shape": "dot", "size": 15}, {"id": 77, "label": "PRP", "shape": "dot", "size": 15}, {"id": 78, "label": "PRP", "shape": "dot", "size": 15}, {"id": 79, "label": "PRP", "shape": "dot", "size": 15}, {"id": 80, "label": "NNS", "shape": "dot", "size": 15}, {"id": 81, "label": "PRP", "shape": "dot", "size": 15}, {"id": 82, "label": "NNS", "shape": "dot", "size": 15}, {"id": 83, "label": "PRP", "shape": "dot", "size": 15}, {"id": 84, "label": "NNS", "shape": "dot", "size": 15}, {"id": 85, "label": "NNS", "shape": "dot", "size": 15}, {"id": 86, "label": "NNS", "shape": "dot", "size": 15}, {"id": 87, "label": "WP", "shape": "dot", "size": 15}, {"id": 88, "label": "NNS", "shape": "dot", "size": 15}, {"id": 89, "label": "PRP", "shape": "dot", "size": 15}, {"id": 90, "label": "NN", "shape": "dot", "size": 15}, {"id": 91, "label": "WDT", "shape": "dot", "size": 15}, {"id": 92, "label": "NN", "shape": "dot", "size": 15}, {"id": 93, "label": "WP", "shape": "dot", "size": 15}, {"id": 94, "label": "NNS", "shape": "dot", "size": 15}, {"id": 95, "label": "NNP", "shape": "dot", "size": 15}, {"id": 96, "label": "NNP", "shape": "dot", "size": 15}, {"id": 97, "label": "PRP", "shape": "dot", "size": 15}, {"id": 98, "label": "NN", "shape": "dot", "size": 15}, {"id": 99, "label": "PRP", "shape": "dot", "size": 15}, {"id": 100, "label": "NN", "shape": "dot", "size": 15}, {"id": 101, "label": "PRP", "shape": "dot", "size": 15}, {"id": 102, "label": "PRP", "shape": "dot", "size": 15}, {"id": 103, "label": "PRP", "shape": "dot", "size": 15}, {"id": 104, "label": "NN", "shape": "dot", "size": 15}, {"id": 105, "label": "PRP", "shape": "dot", "size": 15}, {"id": 106, "label": "NN", "shape": "dot", "size": 15}, {"id": 107, "label": "WP", "shape": "dot", "size": 15}, {"id": 108, "label": "NN", "shape": "dot", "size": 15}, {"id": 109, "label": "PRP", "shape": "dot", "size": 15}, {"id": 110, "label": "NNS", "shape": "dot", "size": 15}, {"id": 111, "label": "PRP", "shape": "dot", "size": 15}, {"id": 112, "label": "PRP", "shape": "dot", "size": 15}, {"id": 113, "label": "PRP", "shape": "dot", "size": 15}, {"id": 114, "label": "NNS", "shape": "dot", "size": 15}, {"id": 115, "label": "PRP", "shape": "dot", "size": 15}, {"id": 116, "label": "NNS", "shape": "dot", "size": 15}, {"id": 117, "label": "NN", "shape": "dot", "size": 15}, {"id": 118, "label": "NNP", "shape": "dot", "size": 15}, {"id": 119, "label": "PRP", "shape": "dot", "size": 15}, {"id": 120, "label": "NN", "shape": "dot", "size": 15}, {"id": 121, "label": "PRP", "shape": "dot", "size": 15}, {"id": 122, "label": "NN", "shape": "dot", "size": 15}, {"id": 123, "label": "NNS", "shape": "dot", "size": 15}, {"id": 124, "label": "NNS", "shape": "dot", "size": 15}, {"id": 125, "label": "PRP", "shape": "dot", "size": 15}, {"id": 126, "label": "NNS", "shape": "dot", "size": 15}, {"id": 127, "label": "PRP", "shape": "dot", "size": 15}, {"id": 128, "label": "NNP", "shape": "dot", "size": 15}, {"id": 129, "label": "PRP", "shape": "dot", "size": 15}, {"id": 130, "label": "NNS", "shape": "dot", "size": 15}, {"id": 131, "label": "NNS", "shape": "dot", "size": 15}, {"id": 132, "label": "NNS", "shape": "dot", "size": 15}, {"id": 133, "label": "PRP", "shape": "dot", "size": 15}, {"id": 134, "label": "NN", "shape": "dot", "size": 15}, {"id": 135, "label": "PRP", "shape": "dot", "size": 15}, {"id": 136, "label": "PRP", "shape": "dot", "size": 15}, {"id": 137, "label": "NNP", "shape": "dot", "size": 15}, {"id": 138, "label": "JJ", "shape": "dot", "size": 15}, {"id": 139, "label": "NN", "shape": "dot", "size": 15}, {"id": 140, "label": "NNP", "shape": "dot", "size": 15}, {"id": 141, "label": "NNP", "shape": "dot", "size": 15}, {"id": 142, "label": "NN", "shape": "dot", "size": 15}, {"id": 143, "label": "PRP", "shape": "dot", "size": 15}, {"id": 144, "label": "NN", "shape": "dot", "size": 15}, {"id": 145, "label": "PRP", "shape": "dot", "size": 15}, {"id": 146, "label": "NN", "shape": "dot", "size": 15}, {"id": 147, "label": "PRP", "shape": "dot", "size": 15}, {"id": 148, "label": "PRP", "shape": "dot", "size": 15}, {"id": 149, "label": "NNP", "shape": "dot", "size": 15}, {"id": 150, "label": "NN", "shape": "dot", "size": 15}, {"id": 151, "label": "PRP", "shape": "dot", "size": 15}, {"id": 152, "label": "NN", "shape": "dot", "size": 15}, {"id": 153, "label": "PRP", "shape": "dot", "size": 15}, {"id": 154, "label": "NNS", "shape": "dot", "size": 15}, {"id": 155, "label": "PRP", "shape": "dot", "size": 15}, {"id": 156, "label": "PRP", "shape": "dot", "size": 15}, {"id": 157, "label": "PRP", "shape": "dot", "size": 15}, {"id": 158, "label": "NNP", "shape": "dot", "size": 15}, {"id": 159, "label": "PRP", "shape": "dot", "size": 15}, {"id": 160, "label": "NNP", "shape": "dot", "size": 15}, {"id": 161, "label": "NNP", "shape": "dot", "size": 15}, {"id": 162, "label": "NN", "shape": "dot", "size": 15}, {"id": 163, "label": "PRP", "shape": "dot", "size": 15}, {"id": 164, "label": "NNP", "shape": "dot", "size": 15}, {"id": 165, "label": "PRP", "shape": "dot", "size": 15}, {"id": 166, "label": "NNP", "shape": "dot", "size": 15}, {"id": 167, "label": "NNS", "shape": "dot", "size": 15}, {"id": 168, "label": "NNS", "shape": "dot", "size": 15}, {"id": 169, "label": "PRP", "shape": "dot", "size": 15}, {"id": 170, "label": "NN", "shape": "dot", "size": 15}, {"id": 171, "label": "PRP", "shape": "dot", "size": 15}, {"id": 172, "label": "NN", "shape": "dot", "size": 15}, {"id": 173, "label": "PRP", "shape": "dot", "size": 15}, {"id": 174, "label": "NN", "shape": "dot", "size": 15}, {"id": 175, "label": "PRP", "shape": "dot", "size": 15}, {"id": 176, "label": "NNP", "shape": "dot", "size": 15}, {"id": 177, "label": "PRP", "shape": "dot", "size": 15}, {"id": 178, "label": "NN", "shape": "dot", "size": 15}, {"id": 179, "label": "NN", "shape": "dot", "size": 15}, {"id": 180, "label": "NNS", "shape": "dot", "size": 15}, {"id": 181, "label": "PRP", "shape": "dot", "size": 15}, {"id": 182, "label": "WDT", "shape": "dot", "size": 15}, {"id": 183, "label": "PRP", "shape": "dot", "size": 15}, {"id": 184, "label": "WDT", "shape": "dot", "size": 15}, {"id": 185, "label": "PRP", "shape": "dot", "size": 15}, {"id": 186, "label": "NNS", "shape": "dot", "size": 15}, {"id": 187, "label": "PRP", "shape": "dot", "size": 15}, {"id": 188, "label": "NN", "shape": "dot", "size": 15}, {"id": 189, "label": "PRP", "shape": "dot", "size": 15}, {"id": 190, "label": "WP", "shape": "dot", "size": 15}, {"id": 191, "label": "PRP", "shape": "dot", "size": 15}, {"id": 192, "label": "NNS", "shape": "dot", "size": 15}, {"id": 193, "label": "PRP", "shape": "dot", "size": 15}, {"id": 194, "label": "NNS", "shape": "dot", "size": 15}, {"id": 195, "label": "PRP", "shape": "dot", "size": 15}, {"id": 196, "label": "VB", "shape": "dot", "size": 15}, {"id": 197, "label": "PRP", "shape": "dot", "size": 15}, {"id": 198, "label": "NN", "shape": "dot", "size": 15}, {"id": 199, "label": "PRP", "shape": "dot", "size": 15}, {"id": 200, "label": "NNS", "shape": "dot", "size": 15}, {"id": 201, "label": "PRP", "shape": "dot", "size": 15}, {"id": 202, "label": "PRP", "shape": "dot", "size": 15}, {"id": 203, "label": "PRP", "shape": "dot", "size": 15}, {"id": 204, "label": "IN", "shape": "dot", "size": 15}, {"id": 205, "label": "PRP", "shape": "dot", "size": 15}, {"id": 206, "label": "PRP", "shape": "dot", "size": 15}, {"id": 207, "label": "NN", "shape": "dot", "size": 15}, {"id": 208, "label": "WP", "shape": "dot", "size": 15}, {"id": 209, "label": "NNS", "shape": "dot", "size": 15}, {"id": 210, "label": "NNS", "shape": "dot", "size": 15}, {"id": 211, "label": "PRP", "shape": "dot", "size": 15}, {"id": 212, "label": "NN", "shape": "dot", "size": 15}, {"id": 213, "label": "NNS", "shape": "dot", "size": 15}, {"id": 214, "label": "NNP", "shape": "dot", "size": 15}, {"id": 215, "label": "PRP", "shape": "dot", "size": 15}, {"id": 216, "label": "NNS", "shape": "dot", "size": 15}, {"id": 217, "label": "PRP", "shape": "dot", "size": 15}, {"id": 218, "label": "NN", "shape": "dot", "size": 15}, {"id": 219, "label": "PRP", "shape": "dot", "size": 15}, {"id": 220, "label": "NN", "shape": "dot", "size": 15}, {"id": 221, "label": "NN", "shape": "dot", "size": 15}, {"id": 222, "label": "WP", "shape": "dot", "size": 15}, {"id": 223, "label": "PRP", "shape": "dot", "size": 15}, {"id": 224, "label": "WP", "shape": "dot", "size": 15}, {"id": 225, "label": "PRP", "shape": "dot", "size": 15}, {"id": 226, "label": "CD", "shape": "dot", "size": 15}, {"id": 227, "label": "NNS", "shape": "dot", "size": 15}, {"id": 228, "label": "NN", "shape": "dot", "size": 15}, {"id": 229, "label": "NN", "shape": "dot", "size": 15}, {"id": 230, "label": "CD", "shape": "dot", "size": 15}, {"id": 231, "label": "PRP", "shape": "dot", "size": 15}, {"id": 232, "label": "NNP", "shape": "dot", "size": 15}, {"id": 233, "label": "PRP", "shape": "dot", "size": 15}, {"id": 234, "label": "NN", "shape": "dot", "size": 15}, {"id": 235, "label": "PRP", "shape": "dot", "size": 15}, {"id": 236, "label": "DT", "shape": "dot", "size": 15}, {"id": 237, "label": "PRP", "shape": "dot", "size": 15}, {"id": 238, "label": "NNS", "shape": "dot", "size": 15}, {"id": 239, "label": "PRP", "shape": "dot", "size": 15}, {"id": 240, "label": "NN", "shape": "dot", "size": 15}, {"id": 241, "label": "PRP", "shape": "dot", "size": 15}, {"id": 242, "label": "NNS", "shape": "dot", "size": 15}, {"id": 243, "label": "PRP", "shape": "dot", "size": 15}, {"id": 244, "label": "NN", "shape": "dot", "size": 15}, {"id": 245, "label": "PRP", "shape": "dot", "size": 15}, {"id": 246, "label": "WDT", "shape": "dot", "size": 15}, {"id": 247, "label": "PRP", "shape": "dot", "size": 15}, {"id": 248, "label": "NN", "shape": "dot", "size": 15}, {"id": 249, "label": "PRP", "shape": "dot", "size": 15}, {"id": 250, "label": "NN", "shape": "dot", "size": 15}]);
+        edges = new vis.DataSet([{"arrows": "to", "from": 1, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 2}, {"arrows": "to", "from": 3, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 4}, {"arrows": "to", "from": 5, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 6}, {"arrows": "to", "from": 7, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 8}, {"arrows": "to", "from": 9, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 10}, {"arrows": "to", "from": 11, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 12}, {"arrows": "to", "from": 13, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 14}, {"arrows": "to", "from": 15, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 16}, {"arrows": "to", "from": 17, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 18}, {"arrows": "to", "from": 19, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 20}, {"arrows": "to", "from": 21, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 22}, {"arrows": "to", "from": 23, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 24}, {"arrows": "to", "from": 25, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 26}, {"arrows": "to", "from": 27, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 28}, {"arrows": "to", "from": 29, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 30}, {"arrows": "to", "from": 31, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 32}, {"arrows": "to", "from": 33, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 34}, {"arrows": "to", "from": 35, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 36}, {"arrows": "to", "from": 37, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 38}, {"arrows": "to", "from": 39, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 40}, {"arrows": "to", "from": 41, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 42}, {"arrows": "to", "from": 43, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 44}, {"arrows": "to", "from": 45, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 46}, {"arrows": "to", "from": 47, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 48}, {"arrows": "to", "from": 49, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 50}, {"arrows": "to", "from": 51, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 52}, {"arrows": "to", "from": 53, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 54}, {"arrows": "to", "from": 55, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 56}, {"arrows": "to", "from": 57, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 58}, {"arrows": "to", "from": 59, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 60}, {"arrows": "to", "from": 61, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 62}, {"arrows": "to", "from": 63, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 64}, {"arrows": "to", "from": 65, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 66}, {"arrows": "to", "from": 67, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 68}, {"arrows": "to", "from": 69, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 70}, {"arrows": "to", "from": 71, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 72}, {"arrows": "to", "from": 73, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 74}, {"arrows": "to", "from": 75, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 76}, {"arrows": "to", "from": 77, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 78}, {"arrows": "to", "from": 79, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 80}, {"arrows": "to", "from": 81, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 82}, {"arrows": "to", "from": 83, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 84}, {"arrows": "to", "from": 85, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 86}, {"arrows": "to", "from": 87, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 88}, {"arrows": "to", "from": 89, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 90}, {"arrows": "to", "from": 91, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 92}, {"arrows": "to", "from": 93, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 94}, {"arrows": "to", "from": 95, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 96}, {"arrows": "to", "from": 97, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 98}, {"arrows": "to", "from": 99, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 100}, {"arrows": "to", "from": 101, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 102}, {"arrows": "to", "from": 103, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 104}, {"arrows": "to", "from": 105, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 106}, {"arrows": "to", "from": 107, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 108}, {"arrows": "to", "from": 109, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 110}, {"arrows": "to", "from": 111, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 112}, {"arrows": "to", "from": 113, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 114}, {"arrows": "to", "from": 115, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 116}, {"arrows": "to", "from": 117, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 118}, {"arrows": "to", "from": 119, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 120}, {"arrows": "to", "from": 121, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 122}, {"arrows": "to", "from": 123, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 124}, {"arrows": "to", "from": 125, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 126}, {"arrows": "to", "from": 127, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 128}, {"arrows": "to", "from": 129, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 130}, {"arrows": "to", "from": 131, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 132}, {"arrows": "to", "from": 133, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 134}, {"arrows": "to", "from": 135, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 136}, {"arrows": "to", "from": 137, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 138}, {"arrows": "to", "from": 139, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 140}, {"arrows": "to", "from": 141, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 142}, {"arrows": "to", "from": 143, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 144}, {"arrows": "to", "from": 145, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 146}, {"arrows": "to", "from": 147, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 148}, {"arrows": "to", "from": 149, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 150}, {"arrows": "to", "from": 151, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 152}, {"arrows": "to", "from": 153, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 154}, {"arrows": "to", "from": 155, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 156}, {"arrows": "to", "from": 157, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 158}, {"arrows": "to", "from": 159, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 160}, {"arrows": "to", "from": 161, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 162}, {"arrows": "to", "from": 163, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 164}, {"arrows": "to", "from": 165, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 166}, {"arrows": "to", "from": 167, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 168}, {"arrows": "to", "from": 169, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 170}, {"arrows": "to", "from": 171, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 172}, {"arrows": "to", "from": 173, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 174}, {"arrows": "to", "from": 175, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 176}, {"arrows": "to", "from": 177, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 178}, {"arrows": "to", "from": 179, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 180}, {"arrows": "to", "from": 181, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 182}, {"arrows": "to", "from": 183, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 184}, {"arrows": "to", "from": 185, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 186}, {"arrows": "to", "from": 187, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 188}, {"arrows": "to", "from": 189, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 190}, {"arrows": "to", "from": 191, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 192}, {"arrows": "to", "from": 193, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 194}, {"arrows": "to", "from": 195, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 196}, {"arrows": "to", "from": 197, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 198}, {"arrows": "to", "from": 199, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 200}, {"arrows": "to", "from": 201, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 202}, {"arrows": "to", "from": 203, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 204}, {"arrows": "to", "from": 205, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 206}, {"arrows": "to", "from": 207, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 208}, {"arrows": "to", "from": 209, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 210}, {"arrows": "to", "from": 211, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 212}, {"arrows": "to", "from": 213, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 214}, {"arrows": "to", "from": 215, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 216}, {"arrows": "to", "from": 217, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 218}, {"arrows": "to", "from": 219, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 220}, {"arrows": "to", "from": 221, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 222}, {"arrows": "to", "from": 223, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 224}, {"arrows": "to", "from": 225, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 226}, {"arrows": "to", "from": 227, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 228}, {"arrows": "to", "from": 229, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 230}, {"arrows": "to", "from": 231, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 232}, {"arrows": "to", "from": 233, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 234}, {"arrows": "to", "from": 235, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 236}, {"arrows": "to", "from": 237, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 238}, {"arrows": "to", "from": 239, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 240}, {"arrows": "to", "from": 241, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 242}, {"arrows": "to", "from": 243, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 244}, {"arrows": "to", "from": 245, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 246}, {"arrows": "to", "from": 247, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 248}, {"arrows": "to", "from": 249, "title": "subj", "to": 0}, {"arrows": "to", "from": 0, "title": "obj", "to": 250}]);
+
+        // adding nodes and edges to the graph
+        data = {nodes: nodes, edges: edges};
+
+        var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": false,
+            "type": "continuous"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+        
+        
+
+        
+
+        network = new vis.Network(container, data, options);
+	 
+        
+
+
+        
+        network.on("stabilizationProgress", function(params) {
+      		document.getElementById('loadingBar').removeAttribute("style");
+	        var maxWidth = 496;
+	        var minWidth = 20;
+	        var widthFactor = params.iterations/params.total;
+	        var width = Math.max(minWidth,maxWidth * widthFactor);
+
+	        document.getElementById('bar').style.width = width + 'px';
+	        document.getElementById('text').innerHTML = Math.round(widthFactor*100) + '%';
+	    });
+	    network.once("stabilizationIterationsDone", function() {
+	        document.getElementById('text').innerHTML = '100%';
+	        document.getElementById('bar').style.width = '496px';
+	        document.getElementById('loadingBar').style.opacity = 0;
+	        // really clean the dom element
+	        setTimeout(function () {document.getElementById('loadingBar').style.display = 'none';}, 500);
+	    });
+        
+
+        return network;
+
+    }
+
+    drawGraph();
+
+</script>
+</body>
+</html>
